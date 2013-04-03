@@ -1,6 +1,6 @@
-# CMS (Simple)
+# Unbranned Streaming Video Content Management and API 
 
-This is a CMS Simple REST service that provides a single RESTful endpoint protected by OAuth 2.
+This is a Simple REST service that provides a RESTful endpoints protected by OAuth 2. 
 
 ## Build
 ```
