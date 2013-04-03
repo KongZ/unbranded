@@ -12,6 +12,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PlayResponse {
 
+   @JsonProperty("id")
+   private String id;
+
    @JsonProperty("content_id")
    private Integer contentId;
 
@@ -25,6 +28,25 @@ public class PlayResponse {
     * 
     */
    public PlayResponse() {
+   }
+
+
+   /**
+    * Gets id.
+    * 
+    * @return the id
+    */
+    public String getId() {
+      return id;
+   }
+
+   /**
+    * Sets id.
+    * 
+    * @param id the id to set
+    */
+   public void setId(String id) {
+      this.id = id;
    }
 
    /**

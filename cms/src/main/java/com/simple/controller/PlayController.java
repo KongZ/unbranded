@@ -6,6 +6,7 @@ package com.simple.controller;
 import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.Set;
+import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -50,6 +51,7 @@ public class PlayController {
             for (Group group : contentGroups) {
                if (group.equals(userGroup.getGroup())) {
                   // return URL only when user has any group inside content group and not expires
+                  playResponse.setId(UUID.randomUUID().toString());
                   playResponse.setUrl(content.getUrl());
                   playResponse.setComments(content.getComments());
                   return playResponse;
